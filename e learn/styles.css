@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+header:hover {
+    background: #d6a6ff;
+    /* Change header background on hover */
+}
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.course {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added transition */
+}
+
+.course:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Shadow effect on hover */
+}
+
+.name {
+    color: #333;
+    transition: text-shadow 0.3s ease;
+}
+
+.name:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Added transition */
+}
+
+img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer:hover {
+    background: #d6a6ff;
+    /* Change header background on hover */
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #e7c6ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    /* Added transition */
+}
+
+form button:hover {
+    background: #d6a6ff;
+    /* Change background color on hover */
+}
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.testimonial {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 80%;
+    /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added transition */
+}
+
+.testimonial:hover {
+    transform: scale(1.02);
+    /* Scale effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect on hover */
+}
+
+.student-name {
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.event {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 80%;
+    /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added transition */
+}
+
+.event:hover {
+    transform: scale(1.02);
+    /* Scale effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect on hover */
+}
+
+.event h3 {
+    color: #333;
+}
+
+.event p {
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .courses-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 90%;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .course {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        width: 100%;
+    }
+}

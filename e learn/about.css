@@ -1,0 +1,154 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+header:hover {
+    background: #d6a6ff;
+    /* Change header background on hover */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+main:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    background: rgb(250, 247, 247);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #e7c6ff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #e7c6ff;
+    margin-top: 5px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+
+        background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    
+    color: rgb(35, 32, 32);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #d1a6ff;
+}
+
+/* Add transitions for list items */
+ul li {
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+    padding-left: 10px;
+}
+
+/* Smooth scroll for navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}

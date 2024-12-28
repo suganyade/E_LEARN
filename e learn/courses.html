@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Online Learning Portal</title>
+    <link rel="stylesheet" href="course.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Available Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1>Course List</h1>
+    
+    <label for="categorySelect">Select Category:</label>
+    <select id="categorySelect">
+        <option value="All">All</option>
+        <option value="Development">Development</option>
+        <option value="Data">Data</option>
+        <option value="Design">Design</option>
+        <option value="Marketing">Marketing</option>
+    </select>
+    
+    <ul id="courseList"></ul>
+    <h2>Track Your Courses</h2>
+    <section class="course-tracking-container">
+        <div class="course">
+            <h3>Web Development</h3>
+            <button class="track-button" onclick="trackCourse('Web Development')">Track Course</button>
+        </div>
+        <div class="course">
+            <h3>Data Science</h3>
+            <button class="track-button" onclick="trackCourse('Data Science')">Track Course</button>
+        </div>
+        <div class="course">
+            <h3>Graphic Design</h3>
+            <button class="track-button" onclick="trackCourse('Graphic Design')">Track Course</button>
+        </div>
+    </section>
+    
+    <h2>Completed Courses</h2>
+    <ul id="completed-courses-list"></ul>
+    
+    
+    <script src="script.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-LEARN</p>
+    </footer>
+    <script src="course.js"></script>
+</body>
+
+</html>

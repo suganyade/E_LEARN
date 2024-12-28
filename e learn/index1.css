@@ -1,0 +1,213 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.illustration {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.btn-see-more,
+.btn-no-thanks {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-see-more:hover {
+    background-color: #0056b3;
+}
+
+.btn-no-thanks {
+    background-color: #dc3545;
+}
+
+.btn-no-thanks:hover {
+    background-color: #c82333;
+}
+a{
+    text-decoration: none;
+}
+
+.background-cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.bg-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+}
+.pink {
+    background-color: #ff6f61;
+    top: 20%;
+    left: 10%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.cyan {
+    background-color: #00bcd4;
+    top: 50%;
+    right: 10%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.black {
+    background-color: #333;
+    bottom: 20%;
+    left: 40%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.yellow {
+    background-color: #ffeb3b;
+    top: 30%;
+    left: 20%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.green {
+    background-color: #4caf50;
+    bottom: 30%;
+    right: 20%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.bg-card:hover {
+    transform: scale(1.05) rotate(5deg);
+    opacity: 0.8;
+}
+.pink,
+.cyan,
+.black,
+.yellow,
+.green {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+        /* Smaller title font size */
+    }
+
+    .description {
+        font-size: 1em;
+        /* Smaller description font size */
+    }
+
+    .card {
+        padding: 15px;
+        /* Reduced padding for cards */
+    }
+
+    .btn-see-more,
+    .btn-no-thanks {
+        padding: 8px 16px;
+       
+        font-size: 0.9em;
+   
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5em;
+      
+    }
+
+    .description {
+        font-size: 0.9em;
+
+    }
+
+    .card {
+        width: 95%;
+      
+    }
+
+    .dots {
+        margin-bottom: 15px;
+       
+    }
+
+    .btn-see-more,
+    .btn-no-thanks {
+        width: 100%;
+        
+        padding: 10px;
+       
+    }
+}
